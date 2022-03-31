@@ -15,3 +15,8 @@ for example:
 username:email
 password:pwd
 
+How to use:
+-run using python3 main.py in terminal
+-enter ticket id (eg: "FR-738")
+
+thats it! It will automatically open a text editor with your filled in template
