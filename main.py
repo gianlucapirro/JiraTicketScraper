@@ -16,6 +16,8 @@ def main():
 
 	#ask user input for issueID and open or create a file
 	key = input("Please enter the Issue Key (\"starts with FR-\"):\n").upper()
+	if "FR-" not in key:
+		key = "FR-" + key
 	fd = open_or_create_file(issues, key)
 
 	#parse all received information in the file and format it in the correct way
