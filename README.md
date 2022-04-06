@@ -17,6 +17,7 @@ How to use:
 -fill in the Ticket ID
 
 !IMPORTANT!
+
 Please remember to fill in your email and password that you use to login to jira in the data.env without spaces
 
 for example:
