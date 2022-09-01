@@ -38,10 +38,9 @@ def open_or_create_file(issues, key):
 
 
 # formats the file with the passed fd and format all information in the file
-def format_file(fd, key, issues, description):
+def format_file(fd, key, issues):
 	fd.write("ISSUE ID: \n\t" + str(key) + "\n")
-	fd.write("ISSUE: \n\t" + str(issues[key]) + "\n")
-	fd.write("DESCRIPTION\n\t" + description)
+	fd.write("ISSUE: \n\t" + str(issues[key]))
 	fd.close()
 	os.system("./get_browser_versions.sh >> " + str(key))
 	os.system("gedit " + str(key))

@@ -21,8 +21,7 @@ def main():
 	fd = open_or_create_file(issues, key)
 
 	#parse all received information in the file and format it in the correct way
-	description = get_description(anonymous_ID, xsrf_token, cloud_session_token, key)
-	format_file(fd, key, issues, description)
+	format_file(fd, key, issues)
 	exit(SUCCESS)
 
 if __name__ == "__main__":
